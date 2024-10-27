@@ -1,0 +1,180 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Currency"
+            android:gravity="center"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- EditText cho số tiền đầu vào -->
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#E1E1E1"
+            android:gravity="start|center"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="50sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:entries="@array/currency_array" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#E1E1E1"
+            android:gravity="start|center"
+            android:inputType="none"
+            android:text="0"
+            android:textSize="50sp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:entries="@array/currency_array" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/exchangeRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exchange Rate"
+            android:textSize="30sp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow"
+        android:background="#FFFFFF">
+
+        <View
+            style="@style/buttonNumber"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/buttonCE"
+            style="@style/buttonOperator"
+            android:text="CE"/>
+        <Button
+            android:id="@+id/buttonBS"
+            style="@style/buttonOperator"
+            android:text="⌫" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/buttonNumber"
+            android:text="7"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/button8"
+            style="@style/buttonNumber"
+            android:text="8"/>
+        <Button
+            android:id="@+id/button9"
+            style="@style/buttonNumber"
+            android:text="9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/buttonNumber"
+            android:text="4"/>
+        <Button
+            android:id="@+id/button5"
+            style="@style/buttonNumber"
+            android:text="5"/>
+        <Button
+            android:id="@+id/button6"
+            style="@style/buttonNumber"
+            android:text="6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow"
+        android:background="#FFFFFF">
+
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/buttonNumber"
+            android:text="1"/>
+        <Button
+            android:id="@+id/button2"
+            style="@style/buttonNumber"
+            android:text="2"/>
+        <Button
+            android:id="@+id/button3"
+            style="@style/buttonNumber"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow"
+        android:background="#FFFFFF">
+
+        <View
+            style="@style/buttonNumber"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/button0"
+            style="@style/buttonNumber"
+            android:text="0"/>
+        <Button
+            android:id="@+id/buttonDot"
+            style="@style/buttonOperator"
+            android:background="#DEDEDE"
+            android:text="." />
+
+    </LinearLayout>
+</LinearLayout>
