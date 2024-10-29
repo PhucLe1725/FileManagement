@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">InformationForm</string>
+    <string name="prompt_phuong_xa">Phường/Xã</string>
+    <string name="prompt_quan_huyen">Quận/Huyện</string>
+    <string name="prompt_tinh_thanh">Tỉnh/Thành</string>
+</resources>
