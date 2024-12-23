@@ -61,13 +61,20 @@ class MainActivity : AppCompatActivity() {
         selectedDateText = findViewById(R.id.selectedDateText)
 
         showCalendarButton.setOnClickListener {
-            calendarView.visibility = if (calendarView.visibility == View.GONE) View.VISIBLE else View.GONE
+            if (calendarView.visibility == View.GONE) {
+                calendarView.visibility = View.VISIBLE
+            } else {
+                calendarView.visibility = View.GONE
+            }
         }
 
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
+            // Thiết lập ngày đã chọn
             val selectedDate = "$dayOfMonth/${month + 1}/$year"
             selectedDateText.text = "Ngày sinh: $selectedDate"
-            calendarView.visibility = View.GONE // Ẩn sau khi chọn
+
+            // Ẩn CalendarView sau khi chọn xong
+            calendarView.visibility = View.GONE
         }
 
         submitButton.setOnClickListener {

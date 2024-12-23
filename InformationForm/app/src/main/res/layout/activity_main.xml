@@ -90,19 +90,19 @@
         <Spinner
             android:id="@+id/phuongXaSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="Chọn Phường/Xã" />
 
         <Spinner
             android:id="@+id/quanHuyenSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="Chọn Quận/Huyện" />
 
         <Spinner
             android:id="@+id/tinhThanhSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="Chọn Tỉnh/Thành" />
 
         <!-- Sở thích (CheckBox) -->
